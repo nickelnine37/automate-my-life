@@ -2,6 +2,6 @@
 __pycache__
 .idea
 .vscode
-secrets/info.json
+secrets/secrets.json
 .ipynb_checkpoints
 notebooks
