@@ -10,12 +10,12 @@ def get_secrets(password: str) -> dict:
     """
 
     with ZipFile('secrets/secrets.json.zip') as zf:
-        zf.extractall(pwd=password.encode())
+        zf.extractall('secrets', pwd=password.encode())
 
     with open('secrets/secrets.json', 'r') as f:
         info = json.load(f)
 
-    os.remove('secrets/info.json')
+    os.remove('secrets/secrets.json')
 
     return info
 
